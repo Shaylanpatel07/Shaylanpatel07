@@ -1,0 +1,102 @@
+'''
+Back and Bis:
+    Straight Bar
+    Zottoman Curls
+    Preacher Curls
+    Long Pull
+    Lat Pulldown
+    Mountains
+    Face Pulls
+    Back Flys
+
+Chest and Tris
+    Chest Press
+    Bench
+    Chest Flys
+    Incline Bench
+    Tricep Pulldown
+    Straight Bar Pulldown
+    Isolated Tricep
+
+Legs and Shoulders
+    Squat
+    Hyper Extension
+    Calf Raises
+    Leg Extension
+    Overhead Press
+    Shoulder Flys
+    Shoulder Shrugs
+'''
+def back_bi():
+    curr_exercise = ""
+    back_bi_full_list = []
+    while curr_exercise != "done":
+        curr_exercise = input("What are you currently doing: ")
+        if curr_exercise == "done":
+            break
+        elif curr_exercise == "straight bar":
+            str_bar_list = ["Straight Bar Curls:"]
+            str_bar_list.append(input("First Weight: "))
+            str_bar_list.append(input("Second Weight: "))
+            str_bar_list.append(input("Third Weight: "))
+            back_bi_full_list.append(str_bar_list)
+
+        elif curr_exercise == "zottoman":
+            zot_list = ["Zottoman Curls:"]
+            zot_list.append(input("First Weight: "))
+            zot_list.append(input("Second Weight: "))
+            zot_list.append(input("Third Weight: "))
+            back_bi_full_list.append(zot_list)
+
+        elif curr_exercise == "preacher":
+            preach_list = ["Preachers:"]
+            preach_list.append(input("First Weight: "))
+            preach_list.append(input("Second Weight: "))
+            preach_list.append(input("Third Weight: "))
+            preach_list.append(input("Fourth Weight: "))
+            back_bi_full_list.append(preach_list)
+
+        elif curr_exercise == "long pull":
+            long_pull_list = ["Long Pulls:"]
+            long_pull_list.append(input("First Weight: "))
+            long_pull_list.append(input("Second Weight: "))
+            long_pull_list.append(input("Third Weight: "))
+            back_bi_full_list.append(long_pull_list)
+
+        elif curr_exercise == "lat pull":
+            lat_list = ["Lat Pulldowns:"]
+            lat_list.append(input("First Weight: "))
+            lat_list.append(input("Second Weight: "))
+            lat_list.append(input("Third Weight: "))
+            back_bi_full_list.append(lat_list)
+
+        elif curr_exercise == "mountain":
+            mnt_list = ["Mountains:"]
+            mnt_list.append(input("First Weight: "))
+            mnt_list.append(input("Second Weight: "))
+            mnt_list.append(input("Third Weight: "))
+            back_bi_full_list.append(mnt_list)
+
+        elif curr_exercise == "face pulls":
+            face_pull_list = ["Face Pulls:"]
+            face_pull_list.append(input("First Weight: "))
+            face_pull_list.append(input("Second Weight: "))
+            face_pull_list.append(input("Third Weight: "))
+            back_bi_full_list.append(face_pull_list)
+
+        elif curr_exercise == "back fly":
+            back_fly_list = ["Back Flys:"]
+            back_fly_list.append(input("First Weight: "))
+            back_fly_list.append(input("Second Weight: "))
+            back_fly_list.append(input("Third Weight: "))
+            back_bi_full_list.append(back_fly_list)
+
+        else:
+            print("You spelled it wrong dumbass")
+
+    #for work in back_bi_full_list:
+    #    print(work)
+
+
+
+back_bi()
